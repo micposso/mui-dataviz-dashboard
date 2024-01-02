@@ -1,6 +1,9 @@
-import Topbar from "./scenes/global/Topbar";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Route, Routes } from "react-router-dom";
+import Topbar from "./scenes/global/Topbar";
+import DashBoard from "./scenes/dashboard";
+import Sidebar from "./scenes/global/Sidebar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -10,8 +13,13 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <Sidebar />
           <main className="content">
             <Topbar />
+            <Routes>
+              <Route path="/" element={<DashBoard />} />
+              <Route path="/" element={<Sidebar />} />
+            </Routes>
           </main>
         </div>
       </ThemeProvider>
