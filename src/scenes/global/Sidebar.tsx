@@ -15,12 +15,22 @@ import {
 const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [collapsed, setCollapsed] = useState(false);
-  const [selected, setSelected] = useState("dashboard");
+  const [ollapsed, setCollapsed] = useState(false);
+  const [selected, setSelected] = useState("Dashboard");
 
   return (
-    <Box>
-      <h1>sidebar</h1>
+    <Box mb="25px">
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <img
+          src=""
+            style={{ cursor: "pointer", borderRadius: "50%" }}
+          alt="profile"
+        />
+      </Box>
+      <Box textAlign="center">
+        <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ m: '20px'}}>User Name</Typography>
+        <Typography variant="h3">User Name</Typography>
+      </Box>
     </Box>
   );
 }
