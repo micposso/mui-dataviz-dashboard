@@ -68,7 +68,13 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOpenOutlinedIcon /> : <MenuOutlinedIcon />}
+            icon={
+              isCollapsed ? (
+                <MenuOpenOutlinedIcon />
+              ) : (
+                <MenuOutlinedIcon />
+              )
+            }
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -84,8 +90,6 @@ const Sidebar = () => {
                 <Typography variant="h3" color={colors.grey[100]}>
                   ADMIN
                 </Typography>
-                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                </IconButton>
               </Box>
             )}
           </MenuItem>
