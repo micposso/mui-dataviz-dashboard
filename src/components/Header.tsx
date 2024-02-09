@@ -7,7 +7,7 @@ const Header = ({ title, subtitle }: { title: string, subtitle: string }) => {
   return <Box>
     <Typography>
       {title}
-    </Typography>s
+    </Typography>
     <Typography>
       {subtitle}
       </Typography>
