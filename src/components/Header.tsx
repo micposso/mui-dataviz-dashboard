@@ -3,12 +3,12 @@ import { tokens } from "../theme";
 
 const Header = ({ title, subtitle }: { title: string, subtitle: string }) => {
   const theme = useTheme();
-  const color = tokens(theme.palette.mode);
+  const colors = tokens(theme.palette.mode);
   return <Box>
-    <Typography>
+    <Typography variant="h2" color={colors.grey[100]} font-weight="bold" sx={{}}>
       {title}
     </Typography>
-    <Typography>
+    <Typography variant="h5" color={colors.greenAccent[400]}>
       {subtitle}
       </Typography>
   </Box>
