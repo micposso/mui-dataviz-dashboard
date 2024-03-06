@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mui-dataviz-dashboard/static/css/main.08ca7eda.css",
+    "main.js": "/mui-dataviz-dashboard/static/js/main.0f7afec3.js",
+    "index.html": "/mui-dataviz-dashboard/index.html",
+    "main.08ca7eda.css.map": "/mui-dataviz-dashboard/static/css/main.08ca7eda.css.map",
+    "main.0f7afec3.js.map": "/mui-dataviz-dashboard/static/js/main.0f7afec3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08ca7eda.css",
+    "static/js/main.0f7afec3.js"
+  ]
+}
